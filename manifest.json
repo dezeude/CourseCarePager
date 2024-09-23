@@ -3,8 +3,18 @@
   "name": "Course Care Pager",
   "description": "A Web extension that makes a sound whenever a HTTP Response is received",
   "version": "1.0",
+  "icons": {
+    "16": "images/course_icon.png",
+    "32": "images/course_icon.svg"
+  },
+  "permissions": ["webRequest", "storage"],
+  "host_permissions": ["*://*.course.care/*"],
+  "background": {
+    "service_worker": "scripts/background.js",
+    "type": "module"
+  },
   "action": {
-    "default_popup": "pager.html",
-    "default_icon": "course_icon.png"
+    "default_popup": "popup/popup.html",
+    "default_icon": "images/course_icon.png"
   }
 }
