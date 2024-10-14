@@ -9,19 +9,9 @@
   },
   "permissions": ["activeTab", "webRequest", "notifications", "scripting"],
   "host_permissions": ["*://course.care/*"],
-  "background": {
-    "service_worker": "service-worker.js",
-    "type": "module"
-  },
   "action": {
     "default_popup": "popup/popup.html",
     "default_icon": "images/course_icon.png"
   },
-  "content_scripts": [
-    {
-      "matches": ["*://course.care/*"],
-      "js": ["content-script.js"]
-    }
-  ],
   "devtools_page": "devtools.html"
 }
