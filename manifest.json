@@ -13,5 +13,6 @@
     "default_popup": "popup/popup.html",
     "default_icon": "images/course_icon.png"
   },
+  "background": { "service_worker": "background.js" },
   "devtools_page": "devtools.html"
 }
