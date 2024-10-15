@@ -7,6 +7,7 @@ chrome.devtools.network.onRequestFinished.addListener((request) => {
     let data = json[0];
     console.log(data);
     if (data.queue.length > queue.length) {
+      queue = [...data.queue];
       audio.play();
       const div = document.createElement("div");
       div.style.background = "green";
