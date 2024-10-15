@@ -1,6 +1,4 @@
 let queue = [];
-let audio = document.createElement("audio");
-audio.src = "ping.mp3";
 
 chrome.devtools.network.onRequestFinished.addListener((request) => {
   request.getContent(async (content) => {
@@ -8,6 +6,8 @@ chrome.devtools.network.onRequestFinished.addListener((request) => {
     let data = json[0];
     console.log(data);
     if (data.queue.length > queue.length) {
+      let audio = document.createElement("audio");
+      audio.src = "ping.mp3";
       audio.play();
       const div = document.createElement("div");
       div.style.background = "green";
