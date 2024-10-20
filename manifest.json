@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Course Care Pager",
-  "description": "A Web extension that makes a sound whenever a HTTP Response is received",
+  "name": "Course.Care Pager",
+  "description": "Extension for Course.Care that notifies user whenever a student joins their queue",
   "version": "1.0",
   "icons": {
     "16": "images/course_icon.png",

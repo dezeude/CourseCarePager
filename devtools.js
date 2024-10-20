@@ -1,5 +1,5 @@
 chrome.devtools.panels.create(
-  "Course Care Data",
+  "Course.Care Data",
   "MyPanelIcon.png",
   "panel.html",
   function (panel) {

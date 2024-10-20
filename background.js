@@ -6,7 +6,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     chrome.notifications.create({
       type: "basic",
       iconUrl: "images/course_icon.png", // Path to your extension's icon
-      title: "Course Care Event",
+      title: "Course.Care Event",
       message: "A new student has joined the queue",
       priority: 2,
     });
